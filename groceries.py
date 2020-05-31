@@ -58,6 +58,13 @@ print("---------------")
 print("THERE ARE " + str(departments_count) + " DEPARTMENTS:")
 print ("--------------")
 
+departments.sort()
+
+for d in departments:
+    print(d.title())
+print("THERE ARE " + str(departments_count) + " DEPARTMENTS:")
+print ("--------------")
+
 for d in departments:
         print (d)
 
