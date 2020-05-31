@@ -61,10 +61,7 @@ print ("--------------")
 departments.sort()
 
 for d in departments:
-    print(d.title())
-print("THERE ARE " + str(departments_count) + " DEPARTMENTS:")
-print ("--------------")
-
-for d in departments:
-        print (d)
+    matching_products = [p for p in products if p["department"] == d]
+    matching_products_count = len(matching_products)
+    print(d.title() + " (" + str(matching_products_count) + " products)")
 
