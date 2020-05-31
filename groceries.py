@@ -39,5 +39,3 @@ for p in products:
     print(p["name"] + " (" + str(price_usd) + ")")
 
 
-
-# TODO: write some Python code here to produce the desired output
